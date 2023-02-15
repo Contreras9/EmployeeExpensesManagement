@@ -5,5 +5,7 @@ public class Main {
         employee1.setId(1);
         employee1.setFirstName("Y");
         employee1.setSurname("Contreras");
+
+        Employee employee2 = new Employee(2, "Manager");
     }
 }

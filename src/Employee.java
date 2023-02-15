@@ -7,6 +7,23 @@ public class Employee {
     private String jobTitle;
     private String department;
 
+    public Employee() {
+    }
+
+    public Employee(int id, String jobTitle) {
+        this.id = id;
+        this.jobTitle = jobTitle;
+    }
+
+    public Employee(int id, String title, String firstName, String surname, String jobTitle, String department) {
+        this.id = id;
+        this.title = title;
+        this.firstName = firstName;
+        this.surname = surname;
+        this.jobTitle = jobTitle;
+        this.department = department;
+    }
+
     public int getId() {
         return id;
     }
