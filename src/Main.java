@@ -12,5 +12,9 @@ public class Main {
         System.out.println(employee1.getMailingName(false));
 
         Employee employee2 = new Employee(2, "Manager");
+
+        Department financeDept = new Department("Finance", "Sally Green");
+
+        AltDepartment personnelDept = new AltDepartment("Personnel", "Bill Purple");
     }
 }
