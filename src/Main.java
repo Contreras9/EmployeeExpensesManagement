@@ -16,5 +16,16 @@ public class Main {
         Department financeDept = new Department("Finance", "Sally Green");
 
         AltDepartment personnelDept = new AltDepartment("Personnel", "Bill Purple");
+
+        ExpenseClaim expenseClaim = new ExpenseClaim(24, 642, "2023-09-01", 26.99);
+        System.out.println(expenseClaim.getEmployeeId());
+        expenseClaim.setPaid(true);
+        System.out.println(expenseClaim.getPaid());
+        expenseClaim.setApproved(true);
+        expenseClaim.setPaid(true);
+        System.out.println(expenseClaim.getPaid());
+
+        ExpenseItem expenseItem = new ExpenseItem(24, 102, "hotel", "The Grand Hotel", 69.99);
+        System.out.println(expenseItem.getDescription());
     }
 }
