@@ -24,6 +24,19 @@ public class Employee {
         this.department = department;
     }
 
+    public String getMailingName() {
+        return title + " " + firstName + " " + surname;
+    }
+
+    public String getMailingName(boolean firstInitialOnly) {
+        if (firstInitialOnly) {
+            return title + " " + firstName.substring(0, 1) + " " + surname;
+        }
+        else {
+            return title + " " + surname;
+        }
+    }
+
     public int getId() {
         return id;
     }
