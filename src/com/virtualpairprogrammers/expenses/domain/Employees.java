@@ -1,3 +1,5 @@
+package com.virtualpairprogrammers.expenses.domain;
+
 public class Employees {
 
     private Employee[] employees;

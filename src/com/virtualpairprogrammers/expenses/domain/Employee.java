@@ -1,3 +1,5 @@
+package com.virtualpairprogrammers.expenses.domain;
+
 public class Employee {
 
     private int id;

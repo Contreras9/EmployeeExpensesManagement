@@ -1,3 +1,10 @@
+package com.virtualpairprogrammers.expenses;
+
+import com.virtualpairprogrammers.expenses.domain.Employee;
+import com.virtualpairprogrammers.expenses.domain.Employees;
+import com.virtualpairprogrammers.expenses.domain.ExpenseClaim;
+import com.virtualpairprogrammers.expenses.domain.ExpenseItem;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -27,11 +34,6 @@ public class Main {
 
         Employee foundEmployee2 = employees.findBySurname("Cyan");
         System.out.println("Didn't find " + (foundEmployee2 == null));
-
-
-        Department financeDept = new Department("Finance", "Sally Green");
-
-        AltDepartment personnelDept = new AltDepartment("Personnel", "Bill Purple");
 
         ExpenseClaim expenseClaim = new ExpenseClaim(24, 642, "2023-09-01", 26.99);
         System.out.println(expenseClaim.getEmployeeId());

@@ -1,3 +1,5 @@
+package com.virtualpairprogrammers.expenses.domain;
+
 public class ExpenseItem {
     private Integer id;
     private Integer claimId;
