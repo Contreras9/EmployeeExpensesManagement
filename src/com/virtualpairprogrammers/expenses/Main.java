@@ -1,9 +1,6 @@
 package com.virtualpairprogrammers.expenses;
 
-import com.virtualpairprogrammers.expenses.domain.Employee;
-import com.virtualpairprogrammers.expenses.domain.Employees;
-import com.virtualpairprogrammers.expenses.domain.ExpenseClaim;
-import com.virtualpairprogrammers.expenses.domain.ExpenseItem;
+import com.virtualpairprogrammers.expenses.domain.*;
 
 public class Main {
 
@@ -26,7 +23,7 @@ public class Main {
         Employees employees = new Employees(15);
         employees.addEmployee(employee1);
         employees.addEmployee(employee2);
-        employees.addEmployee(new Employee(3, "Mrs.", "Susan", "Brown", "Director", "Finance"));
+        employees.addEmployee(new Employee(3, "Mrs.", "Susan", "Brown", "Director", Department.MARKETING));
         employees.printEmployees();
 
         Employee foundEmployee = employees.findBySurname("Brown");
@@ -43,7 +40,7 @@ public class Main {
         expenseClaim.setPaid(true);
         System.out.println(expenseClaim.getPaid());
 
-        ExpenseItem expenseItem = new ExpenseItem(24, 102, "hotel", "The Grand Hotel", 69.99);
+        ExpenseItem expenseItem = new ExpenseItem(24, 102, ExpenseType.ACCOMMODATION, "The Grand Hotel", 69.99);
         System.out.println(expenseItem.getDescription());
 
         System.out.println(employee1);
