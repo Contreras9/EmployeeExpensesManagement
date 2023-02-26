@@ -1,5 +1,7 @@
 package com.virtualpairprogrammers.expenses.domain;
 
+import java.util.Arrays;
+
 public class Employee {
 
     private int id;
@@ -90,5 +92,18 @@ public class Employee {
 
     public void setDepartment(String department) {
         this.department = department;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", surname='" + surname + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", department='" + department + '\'' +
+                ", claims=" + Arrays.toString(claims) +
+                '}';
     }
 }

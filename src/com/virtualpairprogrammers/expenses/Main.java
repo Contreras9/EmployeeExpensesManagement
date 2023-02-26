@@ -45,5 +45,7 @@ public class Main {
 
         ExpenseItem expenseItem = new ExpenseItem(24, 102, "hotel", "The Grand Hotel", 69.99);
         System.out.println(expenseItem.getDescription());
+
+        System.out.println(employee1);
     }
 }
