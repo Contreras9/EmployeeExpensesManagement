@@ -47,5 +47,15 @@ public class Main {
         System.out.println(expenseItem.getDescription());
 
         System.out.println(employee1);
+
+        Employee employee3 = new Employee();
+        employee3.setId(1);
+        employee3.setTitle("Mr.");
+        employee3.setFirstName("Yarid");
+        employee3.setSurname("Contreras");
+
+        System.out.println(employee1.equals(employee3));
+        System.out.println(employee1 == employee1);
+        System.out.println(employee1.getClass());
     }
 }

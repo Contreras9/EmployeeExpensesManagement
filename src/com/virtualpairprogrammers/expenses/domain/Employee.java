@@ -1,6 +1,7 @@
 package com.virtualpairprogrammers.expenses.domain;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Employee {
 
@@ -105,5 +106,20 @@ public class Employee {
                 ", department='" + department + '\'' +
                 ", claims=" + Arrays.toString(claims) +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return id == employee.id && Objects.equals(title, employee.title) && Objects.equals(firstName, employee.firstName) && Objects.equals(surname, employee.surname) && Objects.equals(jobTitle, employee.jobTitle) && Objects.equals(department, employee.department) && Arrays.equals(claims, employee.claims);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(id, title, firstName, surname, jobTitle, department);
+        result = 31 * result + Arrays.hashCode(claims);
+        return result;
     }
 }
